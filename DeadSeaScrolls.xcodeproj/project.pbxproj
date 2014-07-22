@@ -1,455 +1,1150 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		99CE01D2197E98D400367F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D1197E98D400367F5F /* Foundation.framework */; };
-		99CE01D4197E98D400367F5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D3197E98D400367F5F /* CoreGraphics.framework */; };
-		99CE01D6197E98D400367F5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D5197E98D400367F5F /* UIKit.framework */; };
-		99CE01DC197E98D400367F5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01DA197E98D400367F5F /* InfoPlist.strings */; };
-		99CE01DE197E98D400367F5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01DD197E98D400367F5F /* main.m */; };
-		99CE01E2197E98D400367F5F /* RJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01E1197E98D400367F5F /* RJAppDelegate.m */; };
-		99CE01E4197E98D400367F5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01E3197E98D400367F5F /* Images.xcassets */; };
-		99CE01EB197E98D400367F5F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01EA197E98D400367F5F /* XCTest.framework */; };
-		99CE01EC197E98D400367F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D1197E98D400367F5F /* Foundation.framework */; };
-		99CE01ED197E98D400367F5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D5197E98D400367F5F /* UIKit.framework */; };
-		99CE01F5197E98D400367F5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01F3197E98D400367F5F /* InfoPlist.strings */; };
-		99CE01F7197E98D400367F5F /* DeadSeaScrollsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		99CE01EE197E98D400367F5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99CE01C6197E98D400367F5F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99CE01CD197E98D400367F5F;
-			remoteInfo = DeadSeaScrolls;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadSeaScrolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		99CE01D1197E98D400367F5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		99CE01D3197E98D400367F5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		99CE01D5197E98D400367F5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		99CE01D9197E98D400367F5F /* DeadSeaScrolls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeadSeaScrolls-Info.plist"; sourceTree = "<group>"; };
-		99CE01DB197E98D400367F5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		99CE01DD197E98D400367F5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		99CE01DF197E98D400367F5F /* DeadSeaScrolls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeadSeaScrolls-Prefix.pch"; sourceTree = "<group>"; };
-		99CE01E0197E98D400367F5F /* RJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAppDelegate.h; sourceTree = "<group>"; };
-		99CE01E1197E98D400367F5F /* RJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAppDelegate.m; sourceTree = "<group>"; };
-		99CE01E3197E98D400367F5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeadSeaScrollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		99CE01EA197E98D400367F5F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		99CE01F2197E98D400367F5F /* DeadSeaScrollsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeadSeaScrollsTests-Info.plist"; sourceTree = "<group>"; };
-		99CE01F4197E98D400367F5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeadSeaScrollsTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		99CE01CB197E98D400367F5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01D4197E98D400367F5F /* CoreGraphics.framework in Frameworks */,
-				99CE01D6197E98D400367F5F /* UIKit.framework in Frameworks */,
-				99CE01D2197E98D400367F5F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99CE01E6197E98D400367F5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01EB197E98D400367F5F /* XCTest.framework in Frameworks */,
-				99CE01ED197E98D400367F5F /* UIKit.framework in Frameworks */,
-				99CE01EC197E98D400367F5F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		99CE01C5197E98D400367F5F = {
-			isa = PBXGroup;
-			children = (
-				99CE01D7197E98D400367F5F /* DeadSeaScrolls */,
-				99CE01F0197E98D400367F5F /* DeadSeaScrollsTests */,
-				99CE01D0197E98D400367F5F /* Frameworks */,
-				99CE01CF197E98D400367F5F /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		99CE01CF197E98D400367F5F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */,
-				99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		99CE01D0197E98D400367F5F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01D1197E98D400367F5F /* Foundation.framework */,
-				99CE01D3197E98D400367F5F /* CoreGraphics.framework */,
-				99CE01D5197E98D400367F5F /* UIKit.framework */,
-				99CE01EA197E98D400367F5F /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		99CE01D7197E98D400367F5F /* DeadSeaScrolls */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01E0197E98D400367F5F /* RJAppDelegate.h */,
-				99CE01E1197E98D400367F5F /* RJAppDelegate.m */,
-				99CE01E3197E98D400367F5F /* Images.xcassets */,
-				99CE01D8197E98D400367F5F /* Supporting Files */,
-			);
-			path = DeadSeaScrolls;
-			sourceTree = "<group>";
-		};
-		99CE01D8197E98D400367F5F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01D9197E98D400367F5F /* DeadSeaScrolls-Info.plist */,
-				99CE01DA197E98D400367F5F /* InfoPlist.strings */,
-				99CE01DD197E98D400367F5F /* main.m */,
-				99CE01DF197E98D400367F5F /* DeadSeaScrolls-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		99CE01F0197E98D400367F5F /* DeadSeaScrollsTests */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */,
-				99CE01F1197E98D400367F5F /* Supporting Files */,
-			);
-			path = DeadSeaScrollsTests;
-			sourceTree = "<group>";
-		};
-		99CE01F1197E98D400367F5F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				99CE01F2197E98D400367F5F /* DeadSeaScrollsTests-Info.plist */,
-				99CE01F3197E98D400367F5F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		99CE01CD197E98D400367F5F /* DeadSeaScrolls */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99CE01FA197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrolls" */;
-			buildPhases = (
-				99CE01CA197E98D400367F5F /* Sources */,
-				99CE01CB197E98D400367F5F /* Frameworks */,
-				99CE01CC197E98D400367F5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DeadSeaScrolls;
-			productName = DeadSeaScrolls;
-			productReference = 99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */;
-			productType = "com.apple.product-type.application";
-		};
-		99CE01E8197E98D400367F5F /* DeadSeaScrollsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99CE01FD197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrollsTests" */;
-			buildPhases = (
-				99CE01E5197E98D400367F5F /* Sources */,
-				99CE01E6197E98D400367F5F /* Frameworks */,
-				99CE01E7197E98D400367F5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				99CE01EF197E98D400367F5F /* PBXTargetDependency */,
-			);
-			name = DeadSeaScrollsTests;
-			productName = DeadSeaScrollsTests;
-			productReference = 99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		99CE01C6197E98D400367F5F /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = RJ;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = RobotJackalope;
-				TargetAttributes = {
-					99CE01E8197E98D400367F5F = {
-						TestTargetID = 99CE01CD197E98D400367F5F;
-					};
-				};
-			};
-			buildConfigurationList = 99CE01C9197E98D400367F5F /* Build configuration list for PBXProject "DeadSeaScrolls" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 99CE01C5197E98D400367F5F;
-			productRefGroup = 99CE01CF197E98D400367F5F /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				99CE01CD197E98D400367F5F /* DeadSeaScrolls */,
-				99CE01E8197E98D400367F5F /* DeadSeaScrollsTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		99CE01CC197E98D400367F5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01DC197E98D400367F5F /* InfoPlist.strings in Resources */,
-				99CE01E4197E98D400367F5F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99CE01E7197E98D400367F5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01F5197E98D400367F5F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		99CE01CA197E98D400367F5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01E2197E98D400367F5F /* RJAppDelegate.m in Sources */,
-				99CE01DE197E98D400367F5F /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99CE01E5197E98D400367F5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CE01F7197E98D400367F5F /* DeadSeaScrollsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		99CE01EF197E98D400367F5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99CE01CD197E98D400367F5F /* DeadSeaScrolls */;
-			targetProxy = 99CE01EE197E98D400367F5F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		99CE01DA197E98D400367F5F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99CE01DB197E98D400367F5F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		99CE01F3197E98D400367F5F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99CE01F4197E98D400367F5F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		99CE01F8197E98D400367F5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		99CE01F9197E98D400367F5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		99CE01FB197E98D400367F5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
-				INFOPLIST_FILE = "DeadSeaScrolls/DeadSeaScrolls-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		99CE01FC197E98D400367F5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
-				INFOPLIST_FILE = "DeadSeaScrolls/DeadSeaScrolls-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		99CE01FE197E98D400367F5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		99CE01FF197E98D400367F5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
-				INFOPLIST_FILE = "DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		99CE01C9197E98D400367F5F /* Build configuration list for PBXProject "DeadSeaScrolls" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99CE01F8197E98D400367F5F /* Debug */,
-				99CE01F9197E98D400367F5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99CE01FA197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrolls" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99CE01FB197E98D400367F5F /* Debug */,
-				99CE01FC197E98D400367F5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		99CE01FD197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrollsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99CE01FE197E98D400367F5F /* Debug */,
-				99CE01FF197E98D400367F5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 99CE01C6197E98D400367F5F /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>05725855D260482B91822833</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAE8766ECFFF428ABB92D82D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>25CBC8773E68472FAC2B6480</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-DeadSeaScrolls.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-DeadSeaScrolls.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55486CF82AB340D5BF291BC3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8E929546C1F2485FBD58E76B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01C5197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01D7197E98D400367F5F</string>
+				<string>99CE01F0197E98D400367F5F</string>
+				<string>99CE01D0197E98D400367F5F</string>
+				<string>99CE01CF197E98D400367F5F</string>
+				<string>25CBC8773E68472FAC2B6480</string>
+				<string>FFAA8F42592A4EC897B52AE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01C6197E98D400367F5F</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>RJ</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>RobotJackalope</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>99CE01E8197E98D400367F5F</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>99CE01CD197E98D400367F5F</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>99CE01C9197E98D400367F5F</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>99CE01C5197E98D400367F5F</string>
+			<key>productRefGroup</key>
+			<string>99CE01CF197E98D400367F5F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>99CE01CD197E98D400367F5F</string>
+				<string>99CE01E8197E98D400367F5F</string>
+			</array>
+		</dict>
+		<key>99CE01C9197E98D400367F5F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>99CE01F8197E98D400367F5F</string>
+				<string>99CE01F9197E98D400367F5F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>99CE01CA197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01E2197E98D400367F5F</string>
+				<string>99CE01DE197E98D400367F5F</string>
+				<string>99CE0202197E98E600367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01CB197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01D4197E98D400367F5F</string>
+				<string>99CE01D6197E98D400367F5F</string>
+				<string>99CE01D2197E98D400367F5F</string>
+				<string>05725855D260482B91822833</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01CC197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01DC197E98D400367F5F</string>
+				<string>99CE01E4197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01CD197E98D400367F5F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>99CE01FA197E98D400367F5F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>55486CF82AB340D5BF291BC3</string>
+				<string>99CE01CA197E98D400367F5F</string>
+				<string>99CE01CB197E98D400367F5F</string>
+				<string>99CE01CC197E98D400367F5F</string>
+				<string>ECA58B3224764624ACE3DBFB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DeadSeaScrolls</string>
+			<key>productName</key>
+			<string>DeadSeaScrolls</string>
+			<key>productReference</key>
+			<string>99CE01CE197E98D400367F5F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>99CE01CE197E98D400367F5F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DeadSeaScrolls.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>99CE01CF197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01CE197E98D400367F5F</string>
+				<string>99CE01E9197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01D0197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01D1197E98D400367F5F</string>
+				<string>99CE01D3197E98D400367F5F</string>
+				<string>99CE01D5197E98D400367F5F</string>
+				<string>99CE01EA197E98D400367F5F</string>
+				<string>CAE8766ECFFF428ABB92D82D</string>
+				<string>B653A00F76584D379584A877</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01D1197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>99CE01D2197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01D1197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01D3197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>99CE01D4197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01D3197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01D5197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>99CE01D6197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01D5197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01D7197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01E0197E98D400367F5F</string>
+				<string>99CE01E1197E98D400367F5F</string>
+				<string>99CE0200197E98E600367F5F</string>
+				<string>99CE0201197E98E600367F5F</string>
+				<string>99CE01E3197E98D400367F5F</string>
+				<string>99CE01D8197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DeadSeaScrolls</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01D8197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01D9197E98D400367F5F</string>
+				<string>99CE01DA197E98D400367F5F</string>
+				<string>99CE01DD197E98D400367F5F</string>
+				<string>99CE01DF197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01D9197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DeadSeaScrolls-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01DA197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01DB197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01DB197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01DC197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01DA197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01DD197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01DE197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01DD197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01DF197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DeadSeaScrolls-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01E0197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RJAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01E1197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RJAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01E2197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01E1197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01E3197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01E4197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01E3197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01E5197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01F7197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01E6197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01EB197E98D400367F5F</string>
+				<string>99CE01ED197E98D400367F5F</string>
+				<string>99CE01EC197E98D400367F5F</string>
+				<string>BD487605C8284557BB2CB6C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01E7197E98D400367F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99CE01F5197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>99CE01E8197E98D400367F5F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>99CE01FD197E98D400367F5F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8E929546C1F2485FBD58E76B</string>
+				<string>99CE01E5197E98D400367F5F</string>
+				<string>99CE01E6197E98D400367F5F</string>
+				<string>99CE01E7197E98D400367F5F</string>
+				<string>9B529C35AF5D4192AA12EC80</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>99CE01EF197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DeadSeaScrollsTests</string>
+			<key>productName</key>
+			<string>DeadSeaScrollsTests</string>
+			<key>productReference</key>
+			<string>99CE01E9197E98D400367F5F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>99CE01E9197E98D400367F5F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DeadSeaScrollsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>99CE01EA197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>99CE01EB197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01EA197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01EC197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01D1197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01ED197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01D5197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01EE197E98D400367F5F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>99CE01C6197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>99CE01CD197E98D400367F5F</string>
+			<key>remoteInfo</key>
+			<string>DeadSeaScrolls</string>
+		</dict>
+		<key>99CE01EF197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>99CE01CD197E98D400367F5F</string>
+			<key>targetProxy</key>
+			<string>99CE01EE197E98D400367F5F</string>
+		</dict>
+		<key>99CE01F0197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01F6197E98D400367F5F</string>
+				<string>99CE01F1197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DeadSeaScrollsTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F1197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01F2197E98D400367F5F</string>
+				<string>99CE01F3197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F2197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DeadSeaScrollsTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F3197E98D400367F5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>99CE01F4197E98D400367F5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F4197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F5197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01F3197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01F6197E98D400367F5F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DeadSeaScrollsTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE01F7197E98D400367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE01F6197E98D400367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99CE01F8197E98D400367F5F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>99CE01F9197E98D400367F5F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>99CE01FA197E98D400367F5F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>99CE01FB197E98D400367F5F</string>
+				<string>99CE01FC197E98D400367F5F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>99CE01FB197E98D400367F5F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>25CBC8773E68472FAC2B6480</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>99CE01FC197E98D400367F5F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>25CBC8773E68472FAC2B6480</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>99CE01FD197E98D400367F5F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>99CE01FE197E98D400367F5F</string>
+				<string>99CE01FF197E98D400367F5F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>99CE01FE197E98D400367F5F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FFAA8F42592A4EC897B52AE5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>99CE01FF197E98D400367F5F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FFAA8F42592A4EC897B52AE5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DeadSeaScrolls/DeadSeaScrolls-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>99CE0200197E98E600367F5F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RJViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE0201197E98E600367F5F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RJViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99CE0202197E98E600367F5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99CE0201197E98E600367F5F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B529C35AF5D4192AA12EC80</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-DeadSeaScrollsTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B653A00F76584D379584A877</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-DeadSeaScrollsTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BD487605C8284557BB2CB6C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B653A00F76584D379584A877</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAE8766ECFFF428ABB92D82D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-DeadSeaScrolls.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ECA58B3224764624ACE3DBFB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-DeadSeaScrolls-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FFAA8F42592A4EC897B52AE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-DeadSeaScrollsTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-DeadSeaScrollsTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>99CE01C6197E98D400367F5F</string>
+</dict>
+</plist>
