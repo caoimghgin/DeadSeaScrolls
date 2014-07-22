@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99CE01D2197E98D400367F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D1197E98D400367F5F /* Foundation.framework */; };
+		99CE01D4197E98D400367F5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D3197E98D400367F5F /* CoreGraphics.framework */; };
+		99CE01D6197E98D400367F5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D5197E98D400367F5F /* UIKit.framework */; };
+		99CE01DC197E98D400367F5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01DA197E98D400367F5F /* InfoPlist.strings */; };
+		99CE01DE197E98D400367F5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01DD197E98D400367F5F /* main.m */; };
+		99CE01E2197E98D400367F5F /* RJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01E1197E98D400367F5F /* RJAppDelegate.m */; };
+		99CE01E4197E98D400367F5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01E3197E98D400367F5F /* Images.xcassets */; };
+		99CE01EB197E98D400367F5F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01EA197E98D400367F5F /* XCTest.framework */; };
+		99CE01EC197E98D400367F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D1197E98D400367F5F /* Foundation.framework */; };
+		99CE01ED197E98D400367F5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE01D5197E98D400367F5F /* UIKit.framework */; };
+		99CE01F5197E98D400367F5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CE01F3197E98D400367F5F /* InfoPlist.strings */; };
+		99CE01F7197E98D400367F5F /* DeadSeaScrollsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99CE01EE197E98D400367F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CE01C6197E98D400367F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CE01CD197E98D400367F5F;
+			remoteInfo = DeadSeaScrolls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadSeaScrolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CE01D1197E98D400367F5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		99CE01D3197E98D400367F5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		99CE01D5197E98D400367F5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		99CE01D9197E98D400367F5F /* DeadSeaScrolls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeadSeaScrolls-Info.plist"; sourceTree = "<group>"; };
+		99CE01DB197E98D400367F5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99CE01DD197E98D400367F5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99CE01DF197E98D400367F5F /* DeadSeaScrolls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeadSeaScrolls-Prefix.pch"; sourceTree = "<group>"; };
+		99CE01E0197E98D400367F5F /* RJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAppDelegate.h; sourceTree = "<group>"; };
+		99CE01E1197E98D400367F5F /* RJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAppDelegate.m; sourceTree = "<group>"; };
+		99CE01E3197E98D400367F5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeadSeaScrollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CE01EA197E98D400367F5F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		99CE01F2197E98D400367F5F /* DeadSeaScrollsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeadSeaScrollsTests-Info.plist"; sourceTree = "<group>"; };
+		99CE01F4197E98D400367F5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeadSeaScrollsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99CE01CB197E98D400367F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01D4197E98D400367F5F /* CoreGraphics.framework in Frameworks */,
+				99CE01D6197E98D400367F5F /* UIKit.framework in Frameworks */,
+				99CE01D2197E98D400367F5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CE01E6197E98D400367F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01EB197E98D400367F5F /* XCTest.framework in Frameworks */,
+				99CE01ED197E98D400367F5F /* UIKit.framework in Frameworks */,
+				99CE01EC197E98D400367F5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99CE01C5197E98D400367F5F = {
+			isa = PBXGroup;
+			children = (
+				99CE01D7197E98D400367F5F /* DeadSeaScrolls */,
+				99CE01F0197E98D400367F5F /* DeadSeaScrollsTests */,
+				99CE01D0197E98D400367F5F /* Frameworks */,
+				99CE01CF197E98D400367F5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99CE01CF197E98D400367F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */,
+				99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99CE01D0197E98D400367F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01D1197E98D400367F5F /* Foundation.framework */,
+				99CE01D3197E98D400367F5F /* CoreGraphics.framework */,
+				99CE01D5197E98D400367F5F /* UIKit.framework */,
+				99CE01EA197E98D400367F5F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99CE01D7197E98D400367F5F /* DeadSeaScrolls */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01E0197E98D400367F5F /* RJAppDelegate.h */,
+				99CE01E1197E98D400367F5F /* RJAppDelegate.m */,
+				99CE01E3197E98D400367F5F /* Images.xcassets */,
+				99CE01D8197E98D400367F5F /* Supporting Files */,
+			);
+			path = DeadSeaScrolls;
+			sourceTree = "<group>";
+		};
+		99CE01D8197E98D400367F5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01D9197E98D400367F5F /* DeadSeaScrolls-Info.plist */,
+				99CE01DA197E98D400367F5F /* InfoPlist.strings */,
+				99CE01DD197E98D400367F5F /* main.m */,
+				99CE01DF197E98D400367F5F /* DeadSeaScrolls-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99CE01F0197E98D400367F5F /* DeadSeaScrollsTests */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01F6197E98D400367F5F /* DeadSeaScrollsTests.m */,
+				99CE01F1197E98D400367F5F /* Supporting Files */,
+			);
+			path = DeadSeaScrollsTests;
+			sourceTree = "<group>";
+		};
+		99CE01F1197E98D400367F5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99CE01F2197E98D400367F5F /* DeadSeaScrollsTests-Info.plist */,
+				99CE01F3197E98D400367F5F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99CE01CD197E98D400367F5F /* DeadSeaScrolls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CE01FA197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrolls" */;
+			buildPhases = (
+				99CE01CA197E98D400367F5F /* Sources */,
+				99CE01CB197E98D400367F5F /* Frameworks */,
+				99CE01CC197E98D400367F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeadSeaScrolls;
+			productName = DeadSeaScrolls;
+			productReference = 99CE01CE197E98D400367F5F /* DeadSeaScrolls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99CE01E8197E98D400367F5F /* DeadSeaScrollsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CE01FD197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrollsTests" */;
+			buildPhases = (
+				99CE01E5197E98D400367F5F /* Sources */,
+				99CE01E6197E98D400367F5F /* Frameworks */,
+				99CE01E7197E98D400367F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CE01EF197E98D400367F5F /* PBXTargetDependency */,
+			);
+			name = DeadSeaScrollsTests;
+			productName = DeadSeaScrollsTests;
+			productReference = 99CE01E9197E98D400367F5F /* DeadSeaScrollsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99CE01C6197E98D400367F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = RobotJackalope;
+				TargetAttributes = {
+					99CE01E8197E98D400367F5F = {
+						TestTargetID = 99CE01CD197E98D400367F5F;
+					};
+				};
+			};
+			buildConfigurationList = 99CE01C9197E98D400367F5F /* Build configuration list for PBXProject "DeadSeaScrolls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99CE01C5197E98D400367F5F;
+			productRefGroup = 99CE01CF197E98D400367F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99CE01CD197E98D400367F5F /* DeadSeaScrolls */,
+				99CE01E8197E98D400367F5F /* DeadSeaScrollsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99CE01CC197E98D400367F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01DC197E98D400367F5F /* InfoPlist.strings in Resources */,
+				99CE01E4197E98D400367F5F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CE01E7197E98D400367F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01F5197E98D400367F5F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99CE01CA197E98D400367F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01E2197E98D400367F5F /* RJAppDelegate.m in Sources */,
+				99CE01DE197E98D400367F5F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CE01E5197E98D400367F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE01F7197E98D400367F5F /* DeadSeaScrollsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99CE01EF197E98D400367F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CE01CD197E98D400367F5F /* DeadSeaScrolls */;
+			targetProxy = 99CE01EE197E98D400367F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99CE01DA197E98D400367F5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CE01DB197E98D400367F5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		99CE01F3197E98D400367F5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CE01F4197E98D400367F5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99CE01F8197E98D400367F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99CE01F9197E98D400367F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99CE01FB197E98D400367F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
+				INFOPLIST_FILE = "DeadSeaScrolls/DeadSeaScrolls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		99CE01FC197E98D400367F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
+				INFOPLIST_FILE = "DeadSeaScrolls/DeadSeaScrolls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		99CE01FE197E98D400367F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		99CE01FF197E98D400367F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeadSeaScrolls.app/DeadSeaScrolls";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeadSeaScrolls/DeadSeaScrolls-Prefix.pch";
+				INFOPLIST_FILE = "DeadSeaScrollsTests/DeadSeaScrollsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99CE01C9197E98D400367F5F /* Build configuration list for PBXProject "DeadSeaScrolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CE01F8197E98D400367F5F /* Debug */,
+				99CE01F9197E98D400367F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CE01FA197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CE01FB197E98D400367F5F /* Debug */,
+				99CE01FC197E98D400367F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99CE01FD197E98D400367F5F /* Build configuration list for PBXNativeTarget "DeadSeaScrollsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CE01FE197E98D400367F5F /* Debug */,
+				99CE01FF197E98D400367F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99CE01C6197E98D400367F5F /* Project object */;
+}
